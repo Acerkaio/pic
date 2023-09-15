@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aer照片库</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
+
+    <!-- mdui -->
+    <link rel="stylesheet" href="./assets/mdui-v1.0.1/css/mdui.min.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <div class="mdui-appbar">
+        <div class="mdui-toolbar mdui-color-indigo">
+            <a href="javascript:" class="mdui-btn mdui-btn-icon mdui-ripple" id="toggle"><i
+                    class="mdui-icon material-icons">menu</i></a>
+            <a href="javascript:" class="mdui-typo-headline">Acerkaio 的照片库</a>
+            <div class="mdui-toolbar-spacer"></div>
+            <a href="javascript:" class="mdui-btn mdui-btn-icon mdui-ripple unrealized"><i
+                    class="mdui-icon material-icons">search</i></a>
+            <a href="javascript:" class="mdui-btn mdui-btn-icon mdui-ripple unrealized"><i
+                    class="mdui-icon material-icons">refresh</i></a>
+            <a href="javascript:" class="mdui-btn mdui-btn-icon mdui-ripple unrealized"><i
+                    class="mdui-icon material-icons">more_vert</i></a>
+        </div>
+    </div>
+
+    <!-- sidebar -->
+    <div class="mdui-drawer" id="drawer">
+        <ul class="mdui-list">
+            <a href="./index.html">
+                <li class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">star</i>
+                    <div class="mdui-list-item-content">主页</div>
+                </li>
+            </a>
+            <li class="mdui-list-item mdui-ripple" mdui-menu="{target: '#contact-1'}">
+                <i class="mdui-list-item-icon mdui-icon material-icons">send</i>
+                <div class="mdui-list-item-content">联系站长</div>
+
+            </li>
+
+            <ul class="mdui-menu" id="contact-1">
+                <li class="mdui-menu-item">
+                    <a href="https://www.luogu.com.cn/chat?uid=514850" class="mdui-ripple">
+                        <i class="mdui-menu-item-icon mdui-icon material-icons">code</i>in Luogu
+                    </a>
+                </li>
+                <li class="mdui-menu-item">
+                    <a href="mailto@what667172@163.com" class="mdui-ripple">
+                        <i class="mdui-menu-item-icon mdui-icon material-icons">mail</i>in 163mail
+                    </a>
+                </li>
+            </ul>
+
+            <li class="mdui-subheader">内容包含</li>
+            <a href="./Elaina.html">
+                <li class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-content">Elaina</div>
+                </li>
+            </a>
+            <li class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-content">日常</div>
+            </li>
+            <li class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-content">旅游</div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- container -->
+    <div class="mdui-container">
+        <div class="Response-container" id="Mcontect">  
+
+        </div>
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.4/jquery.js"></script>
+
+
+    <!-- mdui -->
+    <script src="./assets/mdui-v1.0.1/js/mdui.min.js"></script>
+    <script>
+        var $ = mdui.$;
+        var inst = new mdui.Drawer('#drawer');
+        inst.close();
+        // method
+        $('#toggle').on('click', function () {
+            inst.toggle();
+        });
+        // 消息提示s
+        $('.unrealized').on('click', function () {
+            mdui.snackbar({
+                message: '暂未实现'
+            });
+        });
+    </script>
+
+
+    <script>
+        var Repository = {
+            "Repository": [
+                {
+                    "title": "魔女の旅々",
+                    "url": "./img/Elaina/あずーる/魔女の旅々/56364050_p0.jpg",
+                    "author": "あずーる"
+                },
+                {
+                    "title": "魔女の旅々",
+                    "url": "./img/Elaina/あずーる/魔女の旅々/56364050_p2.jpg",
+                    "author": "あずーる"
+                },
+                {
+                    "title": "魔女の旅々２",
+                    "url": "./img/Elaina/あずーる/魔女の旅々２/58017733_p0.jpg",
+                    "author": "あずーる"
+                },
+                {
+                    "title": "魔女の旅々２",
+                    "url": "./img/Elaina/あずーる/魔女の旅々２/58017733_p1.jpg",
+                    "author": "あずーる"
+                },
+                {
+                    "title": "魔女の旅々３",
+                    "url": "./img/Elaina/あずーる/魔女の旅々３/60574816_p0.jpg",
+                    "author": "あずーる"
+                },
+                {
+                    "title": "魔女の旅々４",
+                    "url": "./img/Elaina/あずーる/魔女の旅々４/63874452_p0.png",
+                    "author": "あずーる"
+                },
+            ]
+        };
+    </script>
+    <script src="./js/showlist.js"></script>
+</body>
+
+</html>

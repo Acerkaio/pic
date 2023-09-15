@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "Noto Sans";
+    font-weight: normal;
+    font-style: normal;
+    src:
+        local("Noto Sans"),
+        url(https://cdn.luogu.com.cn/fe/NotoSans-Regular.woff2?ebf057b1f60c38b8cb363a16e66323a6) format("woff2"),
+        url(https://cdn.luogu.com.cn/fe/NotoSans-Regular.woff?cd1e8ceb7edd05b780d47fbfff004129) format("woff"),
+        url(https://cdn.luogu.com.cn/fe/NotoSans-Regular.ttf?75538e4b2513fbd5d8300466c530b475) format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Noto Sans";
+    font-weight: normal;
+    font-style: italic;
+    src:
+        local("Noto Sans"),
+        url(https://cdn.luogu.com.cn/fe/NotoSans-Italic.woff2?4279379c5266e1cfd1b1dd81007ed83e) format("woff2"),
+        url(https://cdn.luogu.com.cn/fe/NotoSans-Italic.woff?1e6bc1fe8cb2d65ba9560824e49be578) format("woff"),
+        url(https://cdn.luogu.com.cn/fe/NotoSans-Italic.ttf?6d1eb91a33d56c38eae5e8a7781b3d4b) format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Noto Sans";
+    font-weight: bold;
+    font-style: normal;
+    src:
+        local("Noto Sans"),
+        url(https://cdn.luogu.com.cn/fe/NotoSans-Bold.woff2?fb13268b8d0aaf58c39f7542f051bf38) format("woff2"),
+        url(https://cdn.luogu.com.cn/fe/NotoSans-Bold.woff?b20f2f112ea1a4cb1c28c4cd79e07b3d) format("woff"),
+        url(https://cdn.luogu.com.cn/fe/NotoSans-Bold.ttf?e287c7233b6c9f02aeb05be8e9b0ea2b) format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Noto Sans";
+    font-weight: bold;
+    font-style: italic;
+    src:
+        local("Noto Sans"),
+        url(https://cdn.luogu.com.cn/fe/NotoSans-BoldItalic.woff2?9a73491db396ceda31ceab313dbab535) format("woff2"),
+        url(https://cdn.luogu.com.cn/fe/NotoSans-BoldItalic.woff?ff43ecad874a646557078345aab861be) format("woff"),
+        url(https://cdn.luogu.com.cn/fe/NotoSans-BoldItalic.ttf?eb7a250275f26366c6128668a854c168) format("truetype");
+    font-display: swap;
+}
