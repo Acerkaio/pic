@@ -1,8 +1,9 @@
 for (var i = 0; i < Repository.Repository.length; i++) {
     var item = Repository.Repository[i];
+    var newString = item.url.slice(6);
     $('#Mcontect').html($('#Mcontect').html() + `
     <div class="mdui-grid-tile">
-        <img src="${item.url}" />
+        <img data-src="https://cdn.jsdelivr.net/gh/Acerkaio/ImageHost@1.0/${newString}" />
         <div class="mdui-grid-tile-actions">
             <div class="mdui-grid-tile-text">
                 <div class="mdui-grid-tile-title">${item.title}</div>
