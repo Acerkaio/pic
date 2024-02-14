@@ -1,0 +1,77 @@
+<!-- start on 2.11 2024  -->
+<!-- This is a project with no technical content, let the framework go to hell -->
+<!doctype html>
+<html lang="zh-CN" class="mdui-theme-light">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/mdui@2.0.3/mdui.css">
+    <script src="https://unpkg.com/mdui@2.0.3/mdui.global.js"></script>
+
+    <title>Elaina 的照骗库</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/list.css">
+
+  </head>
+  <body id="body">
+
+    <mdui-dialog fullscreen close-on-esc id="amplify-img-dialog">
+      <div style="margin: 0 auto; text-align: center; padding: 0;">
+        <img src="./media/oi/elaina (1).jpg" alt="ERR" style="width: auto; height: auto; max-width: calc(100vw - 52px); max-height: calc(100vh - 52px);">
+      </div>
+    </mdui-dialog>
+    <mdui-snackbar class="amplify-img-snackbar">已打开</mdui-snackbar>
+
+    <div style="position: relative;overflow: hidden">
+        <mdui-top-app-bar variant="small" scroll-target=".body">
+          <mdui-button-icon icon="heart"><ion-icon name="heart"></ion-icon>
+          </mdui-button-icon>
+          <mdui-top-app-bar-title>Elaina 的照骗库</mdui-top-app-bar-title>
+          <div style="flex-grow: 1"></div>
+          <mdui-button-icon icon="sunny-outline" id="SwitchStyle"><ion-icon name="sunny-outline"></ion-icon></mdui-button-icon>
+        </mdui-top-app-bar>
+      
+        <div class="body" style="height: calc(100vh - 64px);overflow:auto;">
+            <div class="list" id="container" style="height: fit-content !important;">
+            </div>
+        </div>
+      </div>
+      <!-- JQ -->
+      <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.js"></script>
+      <!-- ionicons -->
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      <!-- Change Style --> 
+      <script>
+        mdui.setColorScheme('#825EE4');
+      </script>
+      <script src="./js/ChangeStyle.js"></script>
+      <script>
+        $('#SwitchStyle').click(function() {
+            SwitchStyle();
+        });
+      </script>
+      <!-- list -->
+      <script>
+        var ImageData = [
+            { src: "./media/oi/elaina (1).jpg", width: 0, height: 0, id: 0 },
+            { src: "./media/oi/elaina (1).png", width: 0, height: 0, id: 0 },
+            { src: "./media/oi/elaina (2).jpg", width: 0, height: 0, id: 0 },
+            { src: "./media/oi/elaina (2).png", width: 0, height: 0, id: 0 },
+            { src: "./media/oi/elaina (3).jpg", width: 0, height: 0, id: 0 },
+            { src: "./media/oi/elaina (3).png", width: 0, height: 0, id: 0 },
+            { src: "./media/oi/elaina (4).jpg", width: 0, height: 0, id: 0 },
+            { src: "./media/oi/elaina (5).jpg", width: 0, height: 0, id: 0 },
+            { src: "./media/oi/elaina (6).jpg", width: 0, height: 0, id: 0 },
+        ];
+      </script>
+      <script src="./js/list.js"></script>
+      <script src="./js/ListResponsive.js"></script>
+
+      <!-- amplify -->
+      <script src="./js/amplify.js"></script>
+    </body>
+</html>
