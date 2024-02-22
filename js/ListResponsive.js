@@ -23,4 +23,4 @@ setTimeout(() => {
         document.getElementsByClassName(`ElainaPic-${item.id}`)[0].style.transform = `translate(${minIndex * (300 + 20) + pdS}px, ${sumHeight[minIndex]}px)`
         sumHeight[minIndex] += item.height + 20; 
     });
-}, 2000);
+}, 100);
