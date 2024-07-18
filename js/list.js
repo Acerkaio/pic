@@ -11,14 +11,12 @@ Promise.all(ImageData.map(item => {
             tot++;
             var width = this.width;
             var height = this.height;
-            // console.log(item.src);
             height = 300 * height / width;
             width = 300;
             item.width = width;
             item.id = tot;
             item.height = height;
             const minIndex = minValIndex(sumHeight);
-            // console.log("DEBUG1: " + minIndex);
             item._top = minIndex * (300 + 20);
             const newItem = document.createElement("div");
             newItem.classList.add("list-item");
