@@ -32,8 +32,8 @@ Promise.all(ImageData.map(item => {
                 </div>
                 <div>
                 <div style="position: absolute; bottom: 5px; left: 5px;">
-                    <mdui-button onclick="amplify('${item.src}')">large</mdui-button>
-                    <mdui-button>original</mdui-button>
+                    <mdui-button onclick="amplify('${item.src}','${item.discr}')">详情</mdui-button>
+                    <mdui-button>下载</mdui-button>
                 </div>
                 </div>
             </mdui-card>`
