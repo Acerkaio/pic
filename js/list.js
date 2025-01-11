@@ -4,9 +4,10 @@ let sumHeight = toTwoDimensionalArray(catchColumn).map(() => 0);
 let tot = 0;
 
 Promise.all(ImageData.map(item => {
+    // console.log(item.src);
     return new Promise(resolve => {
         const img = new Image();
-        img.src = item.src;
+        img.src = item.url;
         img.onload = function () {
             tot++;
             var width = this.width;
@@ -26,13 +27,13 @@ Promise.all(ImageData.map(item => {
             newItem.style.transform = `translate(${minIndex * (300 + 20) + pdS}px, ${sumHeight[minIndex]}px)`;
             newItem.innerHTML =
                 `<mdui-card variant="elevated" style="width: 300px;height: fit-content">
-                <img src="${item.src}" alt="ERR" style="width: 300px; height: auto;">
+                <img src="${item.url}" alt="ERR" style="width: 300px; height: auto;">
                 <div>
                 <div style="position: absolute; bottom: 0px; left: 0px; width: 300px; height: 60px; background-color: rgba(85, 85, 85, 0.781);"></div>
                 </div>
                 <div>
                 <div style="position: absolute; bottom: 5px; left: 5px;">
-                    <mdui-button onclick="amplify('${item.src}','${item.discr}')">详情</mdui-button>
+                    <mdui-button onclick="amplify('${item.url}','${item.discr}')">详情</mdui-button>
                     <mdui-button>下载</mdui-button>
                 </div>
                 </div>
